@@ -1,0 +1,282 @@
+% Preamble
+% Compile with XeLateX
+
+\documentclass[11 pt,oneside,a4paper,titlepage]{article}
+\usepackage{preamble}
+\usepackage{enumitem}
+
+\graphicspath{{PIC/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\sidebar{sideBarColor!25}
+
+%\simpleheader{titleBackColor}{Joseba}{Gorospe}{PhD Student | Vehicular Communications | Artificial Intelligence}{white}
+\picheader{titleBackColor}{Joseba}{Gorospe}{PhD Student | Vehicular Communications | Artificial Intelligence}{white}{recortada.jpg}
+
+% Start Minipages
+\vspace*{3.49cm}% start 8 cm from the top of the page}
+    \adjustbox{valign=t}{\begin{minipage}{7.3cm} % large 7.4 cm from the top
+    \vspace*{1cm} % text starts 1cm under the top of the minipage
+           
+        % Picture
+        \iffalse 
+        \begin{center}
+        \begin{tikzpicture}
+            \node[
+            circle,
+            minimum size=\cvPictureWidth,
+            path picture={
+            \node at (path picture bounding box.center){
+             \includegraphics[width=\cvPictureWidth]{recortada.jpg}
+             };
+             }]
+            {};
+        \end{tikzpicture}
+        \end{center}
+        \fi
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Profile section
+        \ruleline{\textbf{Profile}}
+        I am a computer science and telecommunications engineer specialising in wireless vehicular communications and artificial intelligence.
+        The variety of education and work experience that I have had so far has helped me to adapt to the demands of the job or the client. I have had experience developing product-oriented systems, implementing fast projects to meet short deadlines, or managing research contributions within H2020 projects. During these tasks, I always prefer to work in groups, even though I give the impression of being an introvert.
+        \vspace*{0.35cm}
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Contact Section
+        \ruleline{\textbf{Contact}}
+        \vspace*{0.2cm}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+        \matrix [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt] (contact) {
+        \node{\faMale};
+         & \node{Born on 15/03/1996, Age 27};\\
+        \node{\faEnvelope}; 
+         & \node{\href{mailto:josebagorospe96@gmail.com}{josebagorospe96@gmail.com}};\\
+         \node{\faEnvelopeO}; 
+        \node{\faPhone}; 
+         & \node{+34 688618849};\\ 
+        \node{\faMapMarker}; 
+        & \node{Landaburu 13 \\ 48141 Dima (Bizkaia), Spain};\\
+        \node{\faLinkedinSquare}; 
+        & \node{\href{https://www.linkedin.com/in/jgorospe}{Joseba Gorospe Jauregui}};\\
+        \node{\aiGoogleScholar}; 
+        & \node{\href{https://scholar.google.com/citations?user=QxhtMLsAAAAJ&hl=es}{Google Scholar: Joseba Gorospe}};\\
+        \node{\aiOrcid}; 
+        & \node{\href{https://orcid.org/0000-0003-0334-5509}{ORCID: 0000-0003-0334-5509}};\\
+        \node{\faCar};
+        & \node{Car Available, Driving License B};\\
+         };
+        \end{tikzpicture} 
+        \vspace*{0.25cm}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \ruleline{\textbf{Languages}}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+        \matrix [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt] (contact) {
+        %\node{\flag{Basque.png}};
+        & \node{Basque - Native Language};\\
+        %\node{\flag{Spain.png}};
+        & \node{Spanish - Native Language};\\
+        %\node{\flag{England.png}};
+        & \node{English - Professional Knowledge};\\
+        };
+        \end{tikzpicture}
+        \vspace*{0.25cm}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Skill and Strengths 
+    \ruleline{\textbf{Technical Skills}}
+    \vspace*{-0.5cm}
+    \begin{center}
+        \cvtag{V2X}\cvtag{Artificial Intelligence}\cvtag{Wireless Networks}\cvtag{OMNet++}\cvtag{Veins}\cvtag{SUMO}\cvtag{Linux}\cvtag{Git}\cvtag{Embedded Systems}\cvtag{Tensorflow}\cvtag{Scikit-Learn}
+    \end{center}
+    \vspace*{0.25cm}
+% Skill and Strengths 
+    \ruleline{\textbf{Programming Languages}}
+    \vspace*{-0.5cm}
+    \begin{center}
+        \cvtag{C}\cvtag{Python}\cvtag{C++}\cvtag{Matlab}\cvtag{R}\cvtag{Java}\cvtag{SQL}
+    \end{center}
+    \vspace*{0.25cm}
+    % Skill and Strengths 
+    \ruleline{\textbf{Soft Skills}}
+    \vspace*{-0.5cm}
+    \begin{center}
+        \cvtag{Adaptability}\cvtag{Team Work}\cvtag{Autonomy}\cvtag{Problem Solving}\cvtag{Good listener}\cvtag{Patience}
+    \end{center}
+     
+
+        
+    \end{minipage}} %
+    \hfill 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
+    \adjustbox{valign=t}{\begin{minipage}{11.3cm}
+        \vspace*{1cm}
+
+        \section*{{\faGraduationCap} EDUCATION}
+        \vspace*{0.30cm}
+        \Education{2021-Ongoing}{PhD (Expected end date: End 2024)}{V2X \& Artificial Intelligence}{Mondragon Unibertsitatea}
+            
+        \vspace*{0.30cm}
+        
+        \Education{2019-2020}{Computational Engineering \& Intelligent Systems}{Master Degree}{Euskal Herriko Unibertsitatea}
+            
+        \vspace*{0.30cm}
+            
+        \Education{2014-2019}{Telecommunications System Engineering}{Bachelor Degree}{Mondragon Unibertsitatea}
+            
+        \vspace*{0.30cm}
+
+        \Education{2014-2019}{Computer Engineering}{Bachelor Degree}{Mondragon Unibertsitatea}
+                            
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Work Experience
+        
+        \section*{{\faSuitcase} WORK EXPERIENCE}
+        \vspace*{0.30cm}
+        \Work{2021-Ongoing}{}{Networking Doctoral Researcher}{Mondragon Unibertsitatea}{\begin{itemize}
+            \item V2X communications (Hardware \& Simulation).
+            \item Artificial Intelligence.
+        \end{itemize}}  
+            
+        \vspace*{0.30cm}
+            
+        \Work{2020}{6 months}{Artificial Intelligence Research Assistant}{TECNALIA Research \& Innovation}{\begin{itemize}
+            \item Neural Network (NN) optimization.
+            \item Integration of NN into embedded systems.
+            \item Edge Computing.
+        \end{itemize}}  
+            
+        \vspace*{0.30cm}
+
+        \Work{2020}{6 months}{Data Analyst}{Fineco}{\begin{itemize}
+            \item Identify the client's typology.
+            \item Data analysis with psychology experts.
+            \item Machine Learning for clustering.
+            
+        \end{itemize}}  
+            
+        \vspace*{0.30cm}
+
+        \Work{2018-2019}{9 months}{Software Developer}{Ormazabal}{\begin{itemize}
+            \item Development of a control system for Smart Grids.
+            \item Communication algorithm for data collection.
+            \item Data management: Store, visualise, and report.
+        \end{itemize}}  
+            
+        \vspace*{0.30cm}
+
+        \Work{2016-2018}{22 months}{Wireless Network Researcher Assistant}{Mondragon Unibertsitatea}{\begin{itemize}
+            \item Wireless Network (6LoWPAN) for Smart Metering.
+            \item Linux driver implementation.
+        \end{itemize}}
+    
+        \vspace*{0.30cm}
+
+    \iffalse
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Programming Languages
+    \section*{{\faGears} TECHNICALL SKILLS}
+    \vspace*{0.3cm}
+    \cvtag{V2X}\cvtag{Artificial Intelligence}\cvtag{Wireless Networks}\cvtag{OMNet++}\cvtag{Veins}\cvtag{SUMO}\cvtag{Linux}\cvtag{Embedded Systems}\cvtag{Tensorflow}\cvtag{Scikit-Learn}\cvtag{Git}
+\vspace*{0.3cm}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Programming Languages
+    \section*{{\faCode} PROGRAMMING LANGUAGES}
+    \vspace*{0.3cm}
+    \cvtag{C}\cvtag{Python}\cvtag{C++}\cvtag{Matlab}\cvtag{R}\cvtag{Java}\cvtag{SQL}
+    \vspace*{0.3cm}
+\fi
+            
+    \end{minipage}}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Publications
+        %\section*{{\aiOBP} PUBLICATIONS}
+            
+        %\publication{Conference}{2023}{Analyzing Inter-Vehicle Collision Predictions during Emergency Braking with Automated Vehicles}{J Gorospe, S Hasan, MR Islam, AA Gómez, S Girs, E Uhlemann}{2023 19th International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)}{10.1109/WiMob58348.2023.10187826}
+        
+        %\publication{Journal}{2021}{A Generalization Performance Study Using Deep Learning Networks in Embedded Systems}{J Gorospe, R Mulero, O Arbelaitz, J Muguerza, MÁ Antón}{Sensors}{10.3390/s21041031}        
+        
+        %\publication{Journal Article}{2023}{PlatoonSAFE: An Integrated Simulation Tool for Evaluating Platoon Safety}{S Hasan, J Gorospe, S Girs, AA Gómez, E Uhlemann}{IEEE Open Journal of Intelligent Transportation Systems}{10.1109/OJITS.2023.3271608}
+
+        %\publication{Conference Article}{2023}{Prediction of Communication Delays in Connected Vehicles and Platoons}{S Hasan, J Gorospe, AA Gómez, S Girs, E Uhlemann}{2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)}{10.1109/VTC2023-Spring57618.2023.10200902}
+
+        %\vspace*{0.22cm}
+
+        %\publication{Journal Article}{2023}{PlatoonSAFE: An Integrated Simulation Tool for Evaluating Platoon Safety}{Shahriar Hasan, Joseba Gorospe, Svetlana Girs, Arrate Alonso, Elisabeth Uhlemann}{IEEE Open Journal of Intelligent Transportation Systems}{}
+
+        
+            
+    %\end{minipage}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Second Page
+\newpage
+\sidebar{myWhite!25}
+\newpageheader{titleBackColor}{Joseba}{Gorospe}{PhD Student | V2X | AI}{white}
+\adjustbox{valign=t}{%
+\begin{minipage}{19cm}
+    \vspace*{0.3cm}
+   
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     % Publications
+        \section*{{\faBook} PUBLICATIONS}
+
+        \vspace*{0.30cm}
+            
+        \publication{Conference}{2023}{Analyzing Inter-Vehicle Collision Predictions during Emergency Braking with Automated Vehicles}{J Gorospe, S Hasan, MR Islam, AA Gómez, S Girs, E Uhlemann}{2023 19th International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob), Montreal, QC, Canada, 2023, pp. 411-418}{10.1109/WiMob58348.2023.10187826}
+        
+        %\vspace*{0.10cm}
+        
+        \publication{Conference}{2023}{Prediction of Communication Delays in Connected Vehicles and Platoons}{S Hasan, J Gorospe, AA Gómez, S Girs, E Uhlemann}{2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring), Florence, Italy, 2023, pp. 1-6}{10.1109/VTC2023-Spring57618.2023.10200902}
+
+        %\vspace*{0.10cm}
+                
+        \publication{Journal}{2023}{PlatoonSAFE: An Integrated Simulation Tool for Evaluating Platoon Safety}{S Hasan, J Gorospe, S Girs, AA Gómez, E Uhlemann}{IEEE Open Journal of Intelligent Transportation Systems, vol. 4, pp. 325-347, 2023}{10.1109/OJITS.2023.3271608}
+
+        %\vspace*{0.10cm}
+        
+        \publication{Journal}{2021}{A Generalization Performance Study Using Deep Learning Networks in Embedded Systems}{J Gorospe, R Mulero, O Arbelaitz, J Muguerza, MÁ Antón}{Sensors 2021, 21, 1031}{10.3390/s21041031} 
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Certificates
+    \section*{{\faFolderOpen} PROJECTS}
+    \vspace*{0.30cm}
+    \project{Elkartek}{National}{2023-2025}{AutoTrust}{Grant agreement ID: KK-2023/00019}{\begin{itemize}
+            \item Verification of V2X Simulator with Real Environment measurements.
+    \end{itemize}}
+    \project{Elkartek}{National}{2021-2023}{AutoEv@l}{Grant agreement ID: KK-2021/00123}{\begin{itemize}
+        \item V2X developments in simulation environment (Plexe-veins).
+        \item Integrate AI modules into the simulator.
+        \item Help writing justifications.
+    \end{itemize}}
+    \project{H2020}{International}{2020-2023}{InSecTT: Intelligent Secure Trustable Things}{Grant agreement ID: 876038}{\begin{itemize}
+        \item Design, conduct, and analyse V2X measurements for 802.11p and C-V2X cohabitation.
+        \item Integration of 802.11p and 5G (Collaboration with Munster Technological University).
+        \item Participate in F2F and follow-up meetings.
+        \item Write technical justifications.
+    \end{itemize}}
+      
+    \project{H2020}{International}{2017-2020}{SCOTT: Secure Connected Trustable Things}{Grant agreement ID: 737422}{\begin{itemize}
+    \item Help writing justifications about V2X related activities (Joined at the end of the project).
+    \end{itemize}}
+    \project{Elkartek}{National}{2020-2021}{AutoLib}{Grant agreement ID: KK-2019/00035}{\begin{itemize}
+    \item Help writing justifications about V2X related activities (Joined at the end of the project).
+    \end{itemize}}
+    
+    
+\end{minipage}}
+
+
+\end{document}
